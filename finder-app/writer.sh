@@ -18,7 +18,7 @@ then
 	touch $writefile
 	echo $writestr > $writefile
 else 
-	mkdir $DIR
+	mkdir -p $DIR
 	touch $writefile
         echo $writestr > $writefile
 fi
