@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-g
 override CROSS_COMPILE=aarch64-none-linux-gnu-
 
-default:writer clean
+default:writer
 writer:
 ifeq ( $(CROSS_COMPILE), aarch64-none-linux-gnu-)
 	aarch64-none-linux-gnu-gcc writer.c
